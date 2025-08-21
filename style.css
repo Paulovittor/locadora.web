@@ -107,4 +107,7 @@
     padding: 30px;
     border-radius: 40px;
     border: solid;
+    margin: 10px;
+    width: 90%;
+    height: 90%;
 }
