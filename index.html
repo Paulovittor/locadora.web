@@ -1,95 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Locadora</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--Menu de navegaçaõ-->
-    <nav class="navbar-container">
-      <div class="logo">
-        <img src="imagens/logo-car.png" alt="logo-car" />
-        <div class="logo-text">
-          <p>Esbam</p>
-          <p>Veículos</p>
-        </div>
-      </div>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#veiculos">Veículos</a></li>
-        <li><a href="#detalhes">Detalhes</a></li>
-        <li><a href="#sobre nós">Sobre nós</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
 
-      <div class="whatsapp-logo">
-        <img src="imagens/whatsapp.png" alt="whatsapp" />
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locadora</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <div class="showcase-container">
-      <div id="inicio" class="showcase-container-card">
-        <div class="showcase-container-card-1">
-          <h1>A melhor experiência da sua viagem começa aqui</h1>
-          <p>
-            Na ESBAM Veículos, oferecemos carros modernos, confortáveis e
-            seguros para tornar cada quilômetro da sua viagem inesquecível. Seja
-            para passeios de lazer, viagens a negócios ou aventuras na estrada,
-            temos o veículo ideal para você. Alugue com facilidade, segurança e
-            liberdade — e transforme sua viagem em uma experiência única!
-          </p>
-          <a href="">Veja os carros</a>
-        </div>
-
-        <div class="showcase-container-card-2">
-          <div class="form-card">
-            <h1>Escolha o seu carro</h1>
-            <form action="">
-              <label for="car-type">Tipo de Carro</label>
-              <select name="car-type" id="car-type">
-                <option value="">Selecione</option>
-                <option value="economico">Econômico</option>
-                <option value="sedan">Sedan</option>
-                <option value="suv">SUV</option>
-                <option value="luxo">Luxo</option>
-              </select>
-
-              <label for="rental-place">Local de retirada</label>
-              <select id="rental-place" name="rental-place">
-                <option value="">Selecione</option>
-                <option value="sp">São Paulo</option>
-                <option value="rj">Rio de Janeiro</option>
-                <option value="bh">Belo Horizonte</option>
-              </select>
-
-              <label for="return-place">Local de devolução</label>
-              <select id="return-place" name="return-place">
-                <option value="">Selecione</option>
-                <option value="sp">São Paulo</option>
-                <option value="rj">Rio de Janeiro</option>
-                <option value="bh">Belo Horizonte</option>
-              </select>
-
-              <label for="rental-date">Data de retirada</label>
-              <input type="date" id="rental-date" name="rental-date" />
-
-              <label for="return-date">Data de devolução</label>
-              <input type="date" id="return-date" name="return-date" />
-
-              <button type="submit" class="btn-book">Reservar agoraa</button>
-
-            </form>
-          </div>
-        </div>
+<body>
+  <!--Menu de navegaçaõ-->
+  <nav class="navbar-container">
+    <div class="logo">
+      <img src="imagens/logo-car.png" alt="logo-car" />
+      <div class="logo-text">
+        <p>Esbam</p>
+        <p>Veículos</p>
       </div>
     </div>
-  </body>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#veiculos">Veículos</a></li>
+      <li><a href="#detalhes">Detalhes</a></li>
+      <li><a href="#sobre nós">Sobre nós</a></li>
+      <li><a href="#contatos">Contatos</a></li>
+    </ul>
+
+    <div class="whatsapp-logo">
+      <img src="imagens/whatsapp.png" alt="whatsapp" />
+    </div>
+  </nav>
+
+  <div class="showcase-container">
+
+    <div id="inicio" class="showcase-container-card">
+
+      <div class="showcase-container-card-1">
+        <h1>A melhor experiência da sua vida começa aqui</h1>
+        <p>
+          Na ESBAM Veículos, oferecemos carros modernos, confortáveis e
+          seguros para tornar cada quilômetro da sua viagem inesquecível. Seja
+          para passeios de lazer, viagens a negócios ou aventuras na estrada,
+          temos o veículo ideal para você. Alugue com facilidade, segurança e
+          liberdade — e transforme sua viagem em uma experiência única!
+        </p>
+        <a href="">Veja os carros</a>
+      </div>
+
+      <div class="showcase-container-card-2">
+
+        <form class="form-choice-car" action="">
+
+          <h2>Escolha o seu carro</h2>
+
+          <div class="form-group">
+            <label for="car-type">Tipo de carro</label>
+            <select name="car-type" id="car-type">
+              <option value="" disabled selected>Selecione</option>
+              <option value="economico">Econômico</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+              <option value="luxo">Luxo</option>
+              <option value="eletrico">Elétrico</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rental-place">Local de aluguel</label>
+            <select name="rental-place" id="rental-place">
+              <option value="" disabled selected>Selecione</option>
+              <option value="sp">São Paulo</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="bh">Belo Horizonte</option>
+              <option value="manaus">Manaus</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="return-place">Local de devolução</label>
+            <select name="return-place" id="return-place">
+              <option value="" disabled selected>Selecione</option>
+              <option value="sp">São Paulo</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="bh">Belo Horizonte</option>
+              <option value="manaus">Manaus</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rental-date">Data de aluguel</label>
+            <input type="date" id="rental-date" name="rental-date">
+          </div>
+
+          <div class="form-group">
+            <label for="return-date">Data de devolução</label>
+            <input type="date" id="return-date" name="return-date">
+          </div>
+
+          <button type="submit" class="btn-book">Book now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
