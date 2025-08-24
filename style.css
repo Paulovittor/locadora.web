@@ -94,10 +94,6 @@
   background-size: cover, 700px; /* mantém as proporções do carro */
   background-repeat: no-repeat; /* não repetir a imagem */
   background-position: center, calc(100% - 450px) calc(100% - -20px);/* posição do carro */
-
-
-
-
   justify-content: center;
   align-items: center;
   display: flex;
@@ -134,7 +130,7 @@
 .showcase-container-card-1 > a {
   background-color: #f39c12;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   margin-top: 33px;
   color: #fff;
@@ -216,6 +212,7 @@
   padding: 12px;
   border-radius: 8px;
   font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -223,3 +220,111 @@
 .btn-book:hover {
   background-color: #e67e22;
 }
+
+/*========================================showcase informações=================================================*/
+.icons-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.icon-item {
+  flex: 1;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  transition: opacity 0.2s ease-in, transform 0.2s ease;
+}
+
+.icon-item:hover {
+  opacity: 100%;
+  transform: scale(1.01);
+  background-color: #5937E0;
+  color: #F5F5F5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon-item img {
+  transition: filter 0.3s ease;
+}
+
+.icon-item:hover img {
+  filter: brightness(0) invert(1);
+}
+
+
+.icon-item > span {
+  margin-top: 20px;
+  margin-bottom: 29px;
+  font-weight: 550;
+  font-size: 24px;
+}
+
+
+/*===================================container info block ===========================*/
+
+.container-info{
+  height: 550px;
+}
+
+.container-info-block {
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-info-card-1 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-info-card-2 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-info-card-2 .group-info > div {
+  display: flex;
+  align-items: center;
+}
+
+.container-info-card-2 .group-info > div > img {
+  margin-right: 15px;
+}
+
+.group-info {
+  margin-bottom: 24px;
+}
+
+.group-info > p {
+  margin-top: 20px;
+}
+
+
+
+/*=========UTILITIES===========*/
+
+.section-container-info {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.section-content-info {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
