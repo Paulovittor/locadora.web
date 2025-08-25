@@ -90,17 +90,21 @@
 
 .showcase-container-card {
   background-color: #5937E0;
-  background-image:url("imagens/fundo.png"), url("imagens/carro-fundo.png"); /* caminho da sua imagem */
-  background-size: cover, 700px; /* mantém as proporções do carro */
-  background-repeat: no-repeat; /* não repetir a imagem */
-  background-position: center, calc(100% - 450px) calc(100% - -20px);/* posição do carro */
+  background-image: url("imagens/fundo.png"), url("imagens/carro-fundo.png");
+  /* caminho da sua imagem */
+  background-size: cover, 700px;
+  /* mantém as proporções do carro */
+  background-repeat: no-repeat;
+  /* não repetir a imagem */
+  background-position: center, calc(100% - 330px) calc(100% - -10px);
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   width: 100%;
-  height: 720px;
+  height: 800px;
   margin-left: 70px;
   margin-right: 70px;
+  margin-top: 20px;
   border-radius: 40px;
 }
 
@@ -114,12 +118,12 @@
   justify-content: center;
 }
 
-.showcase-container-card-1 > h1 {
-  font-size: 70px;
+.showcase-container-card-1>h1 {
+  font-size: 67px;
   width: 100%;
 }
 
-.showcase-container-card-1 > p {
+.showcase-container-card-1>p {
   margin-top: 27px;
   width: 80%;
   font-size: 16px;
@@ -127,7 +131,7 @@
   font-weight: 300;
 }
 
-.showcase-container-card-1 > a {
+.showcase-container-card-1>a {
   background-color: #f39c12;
   text-align: center;
   font-weight: 500;
@@ -143,7 +147,7 @@
   transition: background-color 0.3s;
 }
 
-.showcase-container-card-1 > a:hover {
+.showcase-container-card-1>a:hover {
   background-color: #e67e22;
 }
 
@@ -158,7 +162,7 @@
 .showcase-container-card-2 {
   display: flex;
   justify-content: center;
-  align-items: center;     
+  align-items: center;
 }
 
 
@@ -171,10 +175,10 @@
   padding: 30px;
   border-radius: 15px;
   width: 416px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.form-choice-car > h2 {
+.form-choice-car>h2 {
   text-align: center;
   margin-bottom: 22px;
 }
@@ -230,7 +234,7 @@
 
 .icon-item {
   flex: 1;
-  padding: 50px;
+  padding: 40px;
   border-radius: 20px;
   text-align: center;
   display: flex;
@@ -259,9 +263,9 @@
 }
 
 
-.icon-item > span {
+.icon-item>span {
   margin-top: 20px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
   font-weight: 550;
   font-size: 24px;
 }
@@ -269,7 +273,7 @@
 
 /*===================================container info block ===========================*/
 
-.container-info{
+.container-info {
   height: 550px;
 }
 
@@ -287,30 +291,113 @@
   align-items: center;
 }
 
+.container-info-card-1 > img {
+  width: 530px;
+  object-fit: contain;
+}
+
 .container-info-card-2 {
   width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.container-info-card-2 .group-info > div {
+.container-info-card-2 .group-info>div {
   display: flex;
   align-items: center;
 }
 
-.container-info-card-2 .group-info > div > img {
+.container-info-card-2 .group-info>div>img {
   margin-right: 15px;
 }
 
-.group-info {
-  margin-bottom: 24px;
+.group-info>p {
+  margin-top: 10px;
+  max-width: 90%;
+  text-align: justify;
 }
 
-.group-info > p {
-  margin-top: 20px;
+/*================================== CONTAINER  CHOOSE CAR =============================================*/
+
+.title-choose-card {
+  display: flex;
+  justify-content: space-between;
 }
+
+.title-choose-card div h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.title-choose-card div {
+  flex:1;
+  display: flex;
+}
+
+.title-choose-card div:last-child{
+  align-self: flex-end;
+  text-align: end;
+  justify-content: end;
+  font-size: 20px;
+  gap: 5px;
+  margin: 5px;
+}
+
+.title-choose-card div:last-child a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.car-card {
+  border: solid;
+  max-width: 416px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: solid;
+  display: flex;
+  justify-content: space-between;
+  max-width: 368px;
+}
+
+.card-icon {
+  display: flex;
+}
+
+.card-btn {
+  border: solid;
+  text-align: center;
+  width: 368px;
+  height: 50px;
+}
+
+.card-btn a {
+  display: block;
+  background-color: #5937E0;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+
+
+
 
 
 
@@ -318,13 +405,12 @@
 
 .section-container-info {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  margin-top: 80px;
 }
 
 .section-content-info {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 }
-
