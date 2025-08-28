@@ -18,22 +18,22 @@
   z-index: 999;
 }
 
-.navbar-container>.logo {
+.navbar-container > .logo {
   display: flex;
   align-items: center;
 }
 
-.navbar-container>.logo img {
+.navbar-container > .logo img {
   height: 50px;
   width: auto;
 }
 
-.navbar-container>.whatsapp-logo img {
+.navbar-container > .whatsapp-logo img {
   height: 50px;
   width: auto;
 }
 
-.navbar-container>.logo>.logo-text {
+.navbar-container > .logo > .logo-text {
   padding: 0 10px;
   height: 100%;
   text-transform: capitalize;
@@ -41,7 +41,7 @@
   letter-spacing: -0.1rem;
 }
 
-.navbar-container>ul {
+.navbar-container > ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -52,7 +52,7 @@
   padding: 0;
 }
 
-.navbar-container>ul>li>a {
+.navbar-container > ul > li > a {
   height: 100%;
   padding: 10px;
   padding-top: 16px;
@@ -67,7 +67,7 @@
   transition: opacity 0.2s ease-in, transform 0.2s ease;
 }
 
-.navbar-container>ul>li>a:hover {
+.navbar-container > ul > li > a:hover {
   opacity: 100%;
   transform: scale(1.05);
   background-color: #5937e0;
@@ -90,11 +90,8 @@
 .showcase-container-card {
   background-color: #5937e0;
   background-image: url("imagens/fundo.png"), url("imagens/carro-fundo.png");
-  /* caminho da sua imagem */
   background-size: cover, 700px;
-  /* mantém as proporções do carro */
   background-repeat: no-repeat;
-  /* não repetir a imagem */
   background-position: center, calc(100% - 330px) calc(100% - -10px);
   display: flex;
   justify-content: center;
@@ -117,12 +114,12 @@
   justify-content: center;
 }
 
-.showcase-container-card-1>h1 {
+.showcase-container-card-1 > h1 {
   font-size: 67px;
   width: 100%;
 }
 
-.showcase-container-card-1>p {
+.showcase-container-card-1 > p {
   margin-top: 27px;
   width: 80%;
   font-size: 16px;
@@ -130,7 +127,7 @@
   font-weight: 300;
 }
 
-.showcase-container-card-1>a {
+.showcase-container-card-1 > a {
   background-color: #f39c12;
   text-align: center;
   font-weight: 500;
@@ -146,7 +143,7 @@
   transition: background-color 0.3s;
 }
 
-.showcase-container-card-1>a:hover {
+.showcase-container-card-1 > a:hover {
   background-color: #e67e22;
 }
 
@@ -175,7 +172,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.form-choice-car>h2 {
+.form-choice-car > h2 {
   text-align: center;
   margin-bottom: 22px;
 }
@@ -259,7 +256,7 @@
   filter: brightness(0) invert(1);
 }
 
-.icon-item>span {
+.icon-item > span {
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 550;
@@ -286,7 +283,7 @@
   align-items: center;
 }
 
-.container-info-card-1>img {
+.container-info-card-1 > img {
   width: 530px;
   object-fit: contain;
 }
@@ -299,16 +296,16 @@
   justify-content: space-evenly;
 }
 
-.container-info-card-2 .group-info>div {
+.container-info-card-2 .group-info > div {
   display: flex;
   align-items: center;
 }
 
-.container-info-card-2 .group-info>div>img {
+.container-info-card-2 .group-info > div > img {
   margin-right: 15px;
 }
 
-.group-info>p {
+.group-info > p {
   margin-top: 10px;
   max-width: 90%;
   text-align: justify;
@@ -347,7 +344,6 @@
 
 /*============================CARDSLIDER========================*/
 
-
 /*--------------------------------------------------------------------*/
 
 .container {
@@ -359,7 +355,7 @@
 .slider-wrapper {
   overflow: hidden;
   max-width: 1800px;
-  margin: 0 70px 40px;
+  margin: 0 70px 15px;
 }
 
 .card-list .card-item {
@@ -371,7 +367,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 20px;
 }
 
@@ -397,7 +393,7 @@
 }
 
 .brand-price-card .card-price h3 {
-  color: #5937E0;
+  color: #5937e0;
 }
 
 .car-icon-usability-cards {
@@ -407,7 +403,6 @@
 
 .car-icon-usability-cards .card-icon {
   display: flex;
-
 }
 
 .car-icon-usability-cards .card-icon img {
@@ -430,7 +425,7 @@
   padding: 10px 35px;
   margin-top: 40px;
   margin-bottom: 24px;
-  background-color: #5937E0;
+  background-color: #5937e0;
   color: #fff;
   border-radius: 12px;
   font-weight: 500;
@@ -440,16 +435,98 @@
 }
 
 .message-button:hover {
-  background-color: #4E30C8;
+  background-color: #4e30c8;
 }
 
 .slider-wrapper .swiper-slide-button {
-  color: #5937E0;
+  color: #5937e0;
 }
 
+/*========================================*/
 
+.showcase-card-search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  background-color: #5937e0;
+  background-image: url("imagens/rodas-card.png");
+  background-repeat: no-repeat;
+  background-position: 8px 50px;
+  max-width: 1786px;
+  height: 415px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  border-radius: 40px;
+  margin-bottom: 40px;
+}
 
+.showcase-card-one .card-infomations {
+  display: flex;
+  flex-direction: column;
+}
 
+.card-infomations h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.card-infomations p {
+  font-size: 16px;
+  color: #fff;
+  width: 90%;
+}
+
+.showcase-card-one {
+  width: 1200px;
+  height: 299px;
+}
+
+.showcase-card-two {
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 320px;
+  margin-top: 35px;
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+.search-container button {
+  background: #ff9800;
+  border: none;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.search-container button:hover {
+  background: #e68a00; /* Laranja mais escuro no hover */
+}
 
 /*=========UTILITIES===========*/
 
