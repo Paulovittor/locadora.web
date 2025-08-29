@@ -344,8 +344,6 @@
 
 /*============================CARDSLIDER========================*/
 
-/*--------------------------------------------------------------------*/
-
 .container {
   display: flex;
   align-items: center;
@@ -355,7 +353,7 @@
 .slider-wrapper {
   overflow: hidden;
   max-width: 1800px;
-  margin: 0 70px 15px;
+  margin: 0 70px 30px;
 }
 
 .card-list .card-item {
@@ -527,6 +525,21 @@
 .search-container button:hover {
   background: #e68a00; /* Laranja mais escuro no hover */
 }
+
+
+/*==================footer================*/
+
+footer{
+  border: solid;
+}
+
+footer .footer-limit {
+  border: solid red;
+  display: flex;
+}
+
+
+
 
 /*=========UTILITIES===========*/
 
