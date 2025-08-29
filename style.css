@@ -526,20 +526,30 @@
   background: #e68a00; /* Laranja mais escuro no hover */
 }
 
-
 /*==================footer================*/
 
-footer{
+footer {
   border: solid;
 }
 
 footer .footer-limit {
   border: solid red;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+footer .icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*=========UTILITIES===========*/
 

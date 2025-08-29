@@ -1,486 +1,573 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Biblioteca Swiper para slider e carrosseis -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Locadora</title>
-  <link rel="stylesheet" href="style.css" />
-  <!--Biblioteca Swiper para slider e carrosseis -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <!---------------Menu de navegaçaõ--------------->
-  <nav class="navbar-container">
-    <div class="logo">
-      <img src="imagens/logo-car.png" alt="logo-car" />
-      <div class="logo-text">
-        <p>Esbam</p>
-        <p>Veículos</p>
+  <body>
+    <!---------------Menu de navegaçaõ--------------->
+    <nav class="navbar-container">
+      <div class="logo">
+        <img src="imagens/logo-car.png" alt="logo-car" />
+        <div class="logo-text">
+          <p>Esbam</p>
+          <p>Veículos</p>
+        </div>
       </div>
-    </div>
-    <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#veiculos">Veículos</a></li>
-      <li><a href="#detalhes">Detalhes</a></li>
-      <li><a href="#sobre nós">Sobre nós</a></li>
-      <li><a href="#contatos">Contatos</a></li>
-    </ul>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#veiculos">Veículos</a></li>
+        <li><a href="#detalhes">Detalhes</a></li>
+        <li><a href="#sobre nós">Sobre nós</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
 
-    <div class="whatsapp-logo">
-      <img src="imagens/whatsapp.png" alt="whatsapp" />
-    </div>
-  </nav>
-
-  <div class="showcase-container">
-    <div id="inicio" class="showcase-container-card">
-      <div class="showcase-container-card-1">
-        <h1>A melhor experiência sobre rodas para o seu destino</h1>
-        <p>
-          Na ESBAM Veículos, oferecemos carros modernos, confortáveis e
-          seguros para tornar cada quilômetro da sua viagem inesquecível. Seja
-          para passeios de lazer, viagens a negócios ou aventuras na estrada,
-          temos o veículo ideal para você. Alugue com facilidade, segurança e
-          liberdade — e transforme sua viagem em uma experiência única!
-        </p>
-        <a href="">Veja os carros</a>
+      <div class="whatsapp-logo">
+        <img src="imagens/whatsapp.png" alt="whatsapp" />
       </div>
+    </nav>
 
-      <div class="showcase-container-card-2">
-        <form class="form-choice-car" action="">
-          <h2>Escolha o seu carro</h2>
-
-          <div class="form-group">
-            <label for="car-type">Tipo de carro</label>
-            <select name="car-type" id="car-type">
-              <option value="" disabled selected>Selecione</option>
-              <option value="economico">Econômico</option>
-              <option value="sedan">Sedan</option>
-              <option value="suv">SUV</option>
-              <option value="luxo">Luxo</option>
-              <option value="eletrico">Elétrico</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="rental-place">Local de aluguel</label>
-            <select name="rental-place" id="rental-place">
-              <option value="" disabled selected>Selecione</option>
-              <option value="sp">São Paulo</option>
-              <option value="rj">Rio de Janeiro</option>
-              <option value="bh">Belo Horizonte</option>
-              <option value="manaus">Manaus</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="return-place">Local de devolução</label>
-            <select name="return-place" id="return-place">
-              <option value="" disabled selected>Selecione</option>
-              <option value="sp">São Paulo</option>
-              <option value="rj">Rio de Janeiro</option>
-              <option value="bh">Belo Horizonte</option>
-              <option value="manaus">Manaus</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="rental-date">Data de aluguel</label>
-            <input type="date" id="rental-date" name="rental-date" />
-          </div>
-
-          <div class="form-group">
-            <label for="return-date">Data de devolução</label>
-            <input type="date" id="return-date" name="return-date" />
-          </div>
-
-          <button type="submit" class="btn-book">Reservar agora</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!---------------------------------------------SHOWCASE-CONTAINER-2---------------------------------->
-
-  <div id="infomations" class="section-container-info">
-    <div class="section-content-info">
-      <div class="icons-content">
-        <div class="icon-item">
-          <img src="imagens/disponibilidade.png" alt="HTML" />
-          <span>Disponibilidade</span>
+    <div class="showcase-container">
+      <div id="inicio" class="showcase-container-card">
+        <div class="showcase-container-card-1">
+          <h1>A melhor experiência sobre rodas para o seu destino</h1>
           <p>
-            Carros prontos para você a qualquer hora, garantindo que sua
-            viagem nunca seja interrompida.
+            Na ESBAM Veículos, oferecemos carros modernos, confortáveis e
+            seguros para tornar cada quilômetro da sua viagem inesquecível. Seja
+            para passeios de lazer, viagens a negócios ou aventuras na estrada,
+            temos o veículo ideal para você. Alugue com facilidade, segurança e
+            liberdade — e transforme sua viagem em uma experiência única!
           </p>
+          <a href="">Veja os carros</a>
         </div>
 
-        <div class="icon-item">
-          <img src="imagens/conforto.png" alt="CSS" />
-          <span>Conforto</span>
-          <p>
-            Desfrute de veículos modernos e bem equipados, transformando cada
-            quilômetro em uma experiência agradável..
-          </p>
-        </div>
+        <div class="showcase-container-card-2">
+          <form class="form-choice-car" action="">
+            <h2>Escolha o seu carro</h2>
 
-        <div class="icon-item">
-          <img src="imagens/economia.png" alt="Javascript" />
-          <span>Economia</span>
-          <p>
-            Preços acessíveis e opções flexíveis para você viajar sem pesar no
-            bolso.
-          </p>
+            <div class="form-group">
+              <label for="car-type">Tipo de carro</label>
+              <select name="car-type" id="car-type">
+                <option value="" disabled selected>Selecione</option>
+                <option value="economico">Econômico</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="luxo">Luxo</option>
+                <option value="eletrico">Elétrico</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rental-place">Local de aluguel</label>
+              <select name="rental-place" id="rental-place">
+                <option value="" disabled selected>Selecione</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="bh">Belo Horizonte</option>
+                <option value="manaus">Manaus</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="return-place">Local de devolução</label>
+              <select name="return-place" id="return-place">
+                <option value="" disabled selected>Selecione</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="bh">Belo Horizonte</option>
+                <option value="manaus">Manaus</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rental-date">Data de aluguel</label>
+              <input type="date" id="rental-date" name="rental-date" />
+            </div>
+
+            <div class="form-group">
+              <label for="return-date">Data de devolução</label>
+              <input type="date" id="return-date" name="return-date" />
+            </div>
+
+            <button type="submit" class="btn-book">Reservar agora</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------SHOWCASE-CONTAINER-2---------------------------------->
+
+    <div id="infomations" class="section-container-info">
+      <div class="section-content-info">
+        <div class="icons-content">
+          <div class="icon-item">
+            <img src="imagens/disponibilidade.png" alt="HTML" />
+            <span>Disponibilidade</span>
+            <p>
+              Carros prontos para você a qualquer hora, garantindo que sua
+              viagem nunca seja interrompida.
+            </p>
+          </div>
+
+          <div class="icon-item">
+            <img src="imagens/conforto.png" alt="CSS" />
+            <span>Conforto</span>
+            <p>
+              Desfrute de veículos modernos e bem equipados, transformando cada
+              quilômetro em uma experiência agradável..
+            </p>
+          </div>
+
+          <div class="icon-item">
+            <img src="imagens/economia.png" alt="Javascript" />
+            <span>Economia</span>
+            <p>
+              Preços acessíveis e opções flexíveis para você viajar sem pesar no
+              bolso.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-content-info">
+        <div class="container-info">
+          <div id="info-block" class="container-info-block">
+            <div class="container-info-card-1">
+              <img src="imagens/foto-info.png" alt="" />
+            </div>
+
+            <div class="container-info-card-2">
+              <div class="group-info">
+                <div>
+                  <img src="imagens/numeros/1.png" alt="numero1" />
+                  <h2>Pagamento facilitado</h2>
+                </div>
+                <p>
+                  Parcelamento em até 10x sem juros no cartão de crédito,
+                  tornando o aluguel acessível e sem apertos no orçamento.
+                </p>
+              </div>
+
+              <div class="group-info">
+                <div>
+                  <img src="imagens/numeros/2.png" alt="numero2" />
+                  <h2>Quilometragem livre</h2>
+                </div>
+                <p>
+                  Dirija sem se preocupar com limites, aproveitando sua viagem
+                  com total liberdade.
+                </p>
+              </div>
+
+              <div class="group-info">
+                <div>
+                  <img src="imagens/numeros/3.png" alt="numero3" />
+                  <h2>Diversidade de modelos</h2>
+                </div>
+                <p>
+                  Escolha entre carros econômicos, SUVs, sedans, automáticos,
+                  utilitários e muito mais, adequando o veículo ao seu estilo de
+                  viagem.
+                </p>
+              </div>
+
+              <div class="group-info">
+                <div>
+                  <img src="imagens/numeros/4.png" alt="numero4" />
+                  <h2>Atendimento nacional</h2>
+                </div>
+                <p>
+                  Com mais de 180 lojas espalhadas pelo Brasil, a ESBAM Veículos
+                  está sempre próxima de você.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="section-content-info">
-      <div class="container-info">
-        <div id="info-block" class="container-info-block">
-          <div class="container-info-card-1">
-            <img src="imagens/foto-info.png" alt="" />
+    <!---------------------------------------------SHOWCASE-CONTAINER-3 - CHOOSE CAR ---------------------------------->
+
+    <div id="infomations" class="section-container-info">
+      <div class="section-content-info">
+        <div class="title-choose-card">
+          <div>
+            <h1>Escolha o carro que combina com você</h1>
           </div>
-
-          <div class="container-info-card-2">
-            <div class="group-info">
-              <div>
-                <img src="imagens/numeros/1.png" alt="numero1" />
-                <h2>Pagamento facilitado</h2>
-              </div>
-              <p>
-                Parcelamento em até 10x sem juros no cartão de crédito,
-                tornando o aluguel acessível e sem apertos no orçamento.
-              </p>
-            </div>
-
-            <div class="group-info">
-              <div>
-                <img src="imagens/numeros/2.png" alt="numero2" />
-                <h2>Quilometragem livre</h2>
-              </div>
-              <p>
-                Dirija sem se preocupar com limites, aproveitando sua viagem
-                com total liberdade.
-              </p>
-            </div>
-
-            <div class="group-info">
-              <div>
-                <img src="imagens/numeros/3.png" alt="numero3" />
-                <h2>Diversidade de modelos</h2>
-              </div>
-              <p>
-                Escolha entre carros econômicos, SUVs, sedans, automáticos,
-                utilitários e muito mais, adequando o veículo ao seu estilo de
-                viagem.
-              </p>
-            </div>
-
-            <div class="group-info">
-              <div>
-                <img src="imagens/numeros/4.png" alt="numero4" />
-                <h2>Atendimento nacional</h2>
-              </div>
-              <p>
-                Com mais de 180 lojas espalhadas pelo Brasil, a ESBAM Veículos
-                está sempre próxima de você.
-              </p>
-            </div>
+          <div>
+            <a href="">Ver todos os modelos</a>
+            <img src="imagens/seta.png" alt="seta" />
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      <!---------------------------------------CARDSLIDER------------------------------------------------------>
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <div class="card-limit">
+                <img
+                  src="imagens/icones-card/imagem/carro-card.png"
+                  alt="user image"
+                  class="user-image"
+                />
 
-  <!---------------------------------------------SHOWCASE-CONTAINER-3 - CHOOSE CAR ---------------------------------->
+                <div class="brand-price-card">
+                  <div class="card-brand">
+                    <h3>Mercedes</h3>
+                    <p>Sedan</p>
+                  </div>
+                  <div class="card-price">
+                    <h3>R$ 100</h3>
+                    <p>Por dia</p>
+                  </div>
+                </div>
 
-  <div id="infomations" class="section-container-info">
-    <div class="section-content-info">
-      <div class="title-choose-card">
-        <div>
-          <h1>Escolha o carro que combina com você</h1>
+                <div class="car-icon-usability-cards">
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/cambio.png"
+                      alt="Cambio"
+                    />
+                    <p>Automático</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/combustível.png"
+                      alt="combustível"
+                    />
+                    <p>Gasolina</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/ar.png"
+                      alt="Ar-condicionado"
+                    />
+                    <p>Ar-condicionado</p>
+                  </div>
+                </div>
+              </div>
+              <button class="message-button">Ver detalhes</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-limit">
+                <img
+                  src="imagens/icones-card/imagem/carro-card.png"
+                  alt="user image"
+                  class="user-image"
+                />
+
+                <div class="brand-price-card">
+                  <div class="card-brand">
+                    <h3>Mercedes</h3>
+                    <p>Sedan</p>
+                  </div>
+                  <div class="card-price">
+                    <h3>R$ 100</h3>
+                    <p>Por dia</p>
+                  </div>
+                </div>
+
+                <div class="car-icon-usability-cards">
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/cambio.png"
+                      alt="Cambio"
+                    />
+                    <p>Automático</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/combustível.png"
+                      alt="combustível"
+                    />
+                    <p>Gasolina</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/ar.png"
+                      alt="Ar-condicionado"
+                    />
+                    <p>Ar-condicionado</p>
+                  </div>
+                </div>
+              </div>
+              <button class="message-button">Ver detalhes</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-limit">
+                <img
+                  src="imagens/icones-card/imagem/carro-card.png"
+                  alt="user image"
+                  class="user-image"
+                />
+
+                <div class="brand-price-card">
+                  <div class="card-brand">
+                    <h3>Mercedes</h3>
+                    <p>Sedan</p>
+                  </div>
+                  <div class="card-price">
+                    <h3>R$ 100</h3>
+                    <p>Por dia</p>
+                  </div>
+                </div>
+
+                <div class="car-icon-usability-cards">
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/cambio.png"
+                      alt="Cambio"
+                    />
+                    <p>Automático</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/combustível.png"
+                      alt="combustível"
+                    />
+                    <p>Gasolina</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/ar.png"
+                      alt="Ar-condicionado"
+                    />
+                    <p>Ar-condicionado</p>
+                  </div>
+                </div>
+              </div>
+              <button class="message-button">Ver detalhes</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-limit">
+                <img
+                  src="imagens/icones-card/imagem/carro-card.png"
+                  alt="user image"
+                  class="user-image"
+                />
+
+                <div class="brand-price-card">
+                  <div class="card-brand">
+                    <h3>Mercedes</h3>
+                    <p>Sedan</p>
+                  </div>
+                  <div class="card-price">
+                    <h3>R$ 100</h3>
+                    <p>Por dia</p>
+                  </div>
+                </div>
+
+                <div class="car-icon-usability-cards">
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/cambio.png"
+                      alt="Cambio"
+                    />
+                    <p>Automático</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/combustível.png"
+                      alt="combustível"
+                    />
+                    <p>Gasolina</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/ar.png"
+                      alt="Ar-condicionado"
+                    />
+                    <p>Ar-condicionado</p>
+                  </div>
+                </div>
+              </div>
+              <button class="message-button">Ver detalhes</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-limit">
+                <img
+                  src="imagens/icones-card/imagem/carro-card.png"
+                  alt="user image"
+                  class="user-image"
+                />
+
+                <div class="brand-price-card">
+                  <div class="card-brand">
+                    <h3>Mercedes</h3>
+                    <p>Sedan</p>
+                  </div>
+                  <div class="card-price">
+                    <h3>R$ 100</h3>
+                    <p>Por dia</p>
+                  </div>
+                </div>
+
+                <div class="car-icon-usability-cards">
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/cambio.png"
+                      alt="Cambio"
+                    />
+                    <p>Automático</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/combustível.png"
+                      alt="combustível"
+                    />
+                    <p>Gasolina</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/ar.png"
+                      alt="Ar-condicionado"
+                    />
+                    <p>Ar-condicionado</p>
+                  </div>
+                </div>
+              </div>
+              <button class="message-button">Ver detalhes</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-limit">
+                <img
+                  src="imagens/icones-card/imagem/carro-card.png"
+                  alt="user image"
+                  class="user-image"
+                />
+
+                <div class="brand-price-card">
+                  <div class="card-brand">
+                    <h3>Mercedes</h3>
+                    <p>Sedan</p>
+                  </div>
+                  <div class="card-price">
+                    <h3>R$ 100</h3>
+                    <p>Por dia</p>
+                  </div>
+                </div>
+
+                <div class="car-icon-usability-cards">
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/cambio.png"
+                      alt="Cambio"
+                    />
+                    <p>Automático</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/combustível.png"
+                      alt="combustível"
+                    />
+                    <p>Gasolina</p>
+                  </div>
+                  <div class="card-icon">
+                    <img
+                      src="imagens/icones-card/icones-car/ar.png"
+                      alt="Ar-condicionado"
+                    />
+                    <p>Ar-condicionado</p>
+                  </div>
+                </div>
+              </div>
+              <button class="message-button">Ver detalhes</button>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
         </div>
-        <div>
-          <a href="">Ver todos os modelos</a>
-          <img src="imagens/seta.png" alt="seta" />
+      </div>
+
+      <!------------------SEARCH CARD----------------->
+      <div class="showcase-card-search">
+        <div class="showcase-card-one">
+          <div class="card-infomations">
+            <h2>
+              Aproveite cada quilômetro ao lado de companhias que fazem a
+              jornada valer
+            </h2>
+            <p>
+              Escolha seu destino em qualquer lugar do Brasil e alugue com uma
+              de nossas locadoras para garantir o carro ideal para a sua viagem
+            </p>
+
+            <div class="search-container">
+              <input type="text" placeholder="City" />
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-card-two">
+          <img src="imagens/carro-sombra.png" alt="Sombra do carro" />
         </div>
       </div>
     </div>
-    <!---------------------------------------CARDSLIDER------------------------------------------------------>
-    <div class="container swiper">
-      <div class="slider-wrapper">
-        <div class="card-list swiper-wrapper">
-          <div class="card-item swiper-slide">
-            <div class="card-limit">
-              <img src="imagens/icones-card/imagem/carro-card.png" alt="user image" class="user-image" />
 
-              <div class="brand-price-card">
-                <div class="card-brand">
-                  <h3>Mercedes</h3>
-                  <p>Sedan</p>
-                </div>
-                <div class="card-price">
-                  <h3>R$ 100</h3>
-                  <p>Por dia</p>
-                </div>
-              </div>
+    <!----------------------footer----------------------->
+    <footer>
+      <div class="footer-limit">
+        <div class="icon-footer">
+          <img src="imagens/logo-car.png" alt="logo-car" />
+          <p>Esbam Veículos</p>
+        </div>
 
-              <div class="car-icon-usability-cards">
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/cambio.png" alt="Cambio" />
-                  <p>Automático</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/combustível.png" alt="combustível" />
-                  <p>Gasolina</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/ar.png" alt="Ar-condicionado" />
-                  <p>Ar-condicionado</p>
-                </div>
-              </div>
-            </div>
-            <button class="message-button">Ver detalhes</button>
-          </div>
-
-          <div class="card-item swiper-slide">
-            <div class="card-limit">
-              <img src="imagens/icones-card/imagem/carro-card.png" alt="user image" class="user-image" />
-
-              <div class="brand-price-card">
-                <div class="card-brand">
-                  <h3>Mercedes</h3>
-                  <p>Sedan</p>
-                </div>
-                <div class="card-price">
-                  <h3>R$ 100</h3>
-                  <p>Por dia</p>
-                </div>
-              </div>
-
-              <div class="car-icon-usability-cards">
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/cambio.png" alt="Cambio" />
-                  <p>Automático</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/combustível.png" alt="combustível" />
-                  <p>Gasolina</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/ar.png" alt="Ar-condicionado" />
-                  <p>Ar-condicionado</p>
-                </div>
-              </div>
-            </div>
-            <button class="message-button">Ver detalhes</button>
-          </div>
-
-          <div class="card-item swiper-slide">
-            <div class="card-limit">
-              <img src="imagens/icones-card/imagem/carro-card.png" alt="user image" class="user-image" />
-
-              <div class="brand-price-card">
-                <div class="card-brand">
-                  <h3>Mercedes</h3>
-                  <p>Sedan</p>
-                </div>
-                <div class="card-price">
-                  <h3>R$ 100</h3>
-                  <p>Por dia</p>
-                </div>
-              </div>
-
-              <div class="car-icon-usability-cards">
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/cambio.png" alt="Cambio" />
-                  <p>Automático</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/combustível.png" alt="combustível" />
-                  <p>Gasolina</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/ar.png" alt="Ar-condicionado" />
-                  <p>Ar-condicionado</p>
-                </div>
-              </div>
-            </div>
-            <button class="message-button">Ver detalhes</button>
-          </div>
-
-          <div class="card-item swiper-slide">
-            <div class="card-limit">
-              <img src="imagens/icones-card/imagem/carro-card.png" alt="user image" class="user-image" />
-
-              <div class="brand-price-card">
-                <div class="card-brand">
-                  <h3>Mercedes</h3>
-                  <p>Sedan</p>
-                </div>
-                <div class="card-price">
-                  <h3>R$ 100</h3>
-                  <p>Por dia</p>
-                </div>
-              </div>
-
-              <div class="car-icon-usability-cards">
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/cambio.png" alt="Cambio" />
-                  <p>Automático</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/combustível.png" alt="combustível" />
-                  <p>Gasolina</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/ar.png" alt="Ar-condicionado" />
-                  <p>Ar-condicionado</p>
-                </div>
-              </div>
-            </div>
-            <button class="message-button">Ver detalhes</button>
-          </div>
-
-          <div class="card-item swiper-slide">
-            <div class="card-limit">
-              <img src="imagens/icones-card/imagem/carro-card.png" alt="user image" class="user-image" />
-
-              <div class="brand-price-card">
-                <div class="card-brand">
-                  <h3>Mercedes</h3>
-                  <p>Sedan</p>
-                </div>
-                <div class="card-price">
-                  <h3>R$ 100</h3>
-                  <p>Por dia</p>
-                </div>
-              </div>
-
-              <div class="car-icon-usability-cards">
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/cambio.png" alt="Cambio" />
-                  <p>Automático</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/combustível.png" alt="combustível" />
-                  <p>Gasolina</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/ar.png" alt="Ar-condicionado" />
-                  <p>Ar-condicionado</p>
-                </div>
-              </div>
-            </div>
-            <button class="message-button">Ver detalhes</button>
-          </div>
-
-          <div class="card-item swiper-slide">
-            <div class="card-limit">
-              <img src="imagens/icones-card/imagem/carro-card.png" alt="user image" class="user-image" />
-
-              <div class="brand-price-card">
-                <div class="card-brand">
-                  <h3>Mercedes</h3>
-                  <p>Sedan</p>
-                </div>
-                <div class="card-price">
-                  <h3>R$ 100</h3>
-                  <p>Por dia</p>
-                </div>
-              </div>
-
-              <div class="car-icon-usability-cards">
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/cambio.png" alt="Cambio" />
-                  <p>Automático</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/combustível.png" alt="combustível" />
-                  <p>Gasolina</p>
-                </div>
-                <div class="card-icon">
-                  <img src="imagens/icones-card/icones-car/ar.png" alt="Ar-condicionado" />
-                  <p>Ar-condicionado</p>
-                </div>
-              </div>
-            </div>
-            <button class="message-button">Ver detalhes</button>
+        <div class="icon-footer">
+          <img src="imagens/icones-footer/icon-adress.png" alt="" />
+          <div>
+            <p>Endereço</p>
+            <p>Rua santa cruz machado, n°50</p>
           </div>
         </div>
 
-        <div class="swiper-pagination"></div>
-        <div class="swiper-slide-button swiper-button-prev"></div>
-        <div class="swiper-slide-button swiper-button-next"></div>
-      </div>
-    </div>
-
-    <!------------------SEARCH CARD----------------->
-    <div class="showcase-card-search">
-      <div class="showcase-card-one">
-        <div class="card-infomations">
-          <h2>
-            Aproveite cada quilômetro ao lado de companhias que fazem a
-            jornada valer
-          </h2>
-          <p>
-            Escolha seu destino em qualquer lugar do Brasil e alugue com uma
-            de nossas locadoras para garantir o carro ideal para a sua viagem
-          </p>
-
-          <div class="search-container">
-            <input type="text" placeholder="City" />
-            <button>Search</button>
+        <div class="icon-footer">
+          <img src="imagens/icones-footer/icon-mail.png" alt="" />
+          <div>
+            <p>Email</p>
+            <p>esbamveiculos@loc.com.br</p>
           </div>
+        </div>
 
+        <div class="icon-footer">
+          <img src="imagens/icones-footer/icon-phone.png" alt="" />
+          <div>
+            <p>Fone</p>
+            <p>+537 547-6401</p>
+          </div>
         </div>
       </div>
-      <div class="showcase-card-two">
-        <img src="imagens/carro-sombra.png" alt="Sombra do carro" />
+
+      <div class="copyright">
+        <p>© Copyright Esbam Veículos 2025. Desenvolvido por by Paulo Vitor</p>
       </div>
-    </div>
-  </div>
+    </footer>
 
-
-  <!----------------------footer----------------------->
-  <footer>
-    <div class="footer-limit">
-      <div class="icon-footer">
-        <img src="imagens/logo-car.png" alt="logo-car">
-        <p>Esbam Veículos</p>
-      </div>
-
-      <div class="icon-footer">
-        <img src="" alt="">
-        <p>Endereço</p>
-        <p>Rua santa cruz machado, n°50</p>
-      </div>
-
-      <div class="icon-footer">
-        <img src="" alt="">
-        <p>Email</p>
-        <p>esbamveiculos@loc.com.br</p>
-      </div>
-
-      <div class="icon-footer">
-        <img src="" alt="">
-        <p>Fone</p>
-        <p>+537 547-6401</p>
-      </div>
-    </div>
-
-    <p>© Copyright Esbam Veículos 2025. Desenvolvido por by Paulo Vitor</p>
-  </footer>
-
-  <!--Linkando ao swipperjs-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!--linkando ao doc js-->
-  <script src="script.js"></script>
-</body>
-
+    <!--Linkando ao swipperjs-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--linkando ao doc js-->
+    <script src="script.js"></script>
+  </body>
 </html>
